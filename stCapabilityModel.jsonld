@@ -10,7 +10,14 @@
     "subClassOf": {"@id": "rdfs:subClassOf", "@type": "@id"},
 	  "range": {"@id": "rdfs:range", "@type": "@id"},
 	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
-    "items": "st:hasItem"
+    "items": "st:hasItem",
+    "hasCapability": { "@id": "st:hasCapability", "@type": "@id"},
+    "hasAttribute": { "@id": "st:hasAttribute", "@type": "@id"},
+    "hasCommand": { "@id": "st:hasCommand", "@type": "@id"},
+    "hasMethod": { "@id": "st:hasMethod", "@type": "@id"},
+    "hasParameter": { "@id": "st:hasParameter", "@type": "@id"},
+    "hasAttribute": { "@id": "st:hasAttribute", "@type": "@id"},
+    "hasRepresentationFormat": { "@id": "st:hasRepresentationFormat", "@type": "@id"}
   },
   "items":
   [
@@ -31,12 +38,14 @@
   {
     "type": "sch:Type",
     "id": "st:Command",
-    "subClassOf": "st:Element"
+    "subClassOf": "st:Element",
+    "hasMethod": "st:invokeMethod"
   },
   {
     "type": "sch:Type",
     "id": "st:Attribute",
-    "subClassOf": "st:Element"
+    "subClassOf": "st:Element",
+    "hasMethod": ["st:getMethod", "st:setMethod]"]
   },
   {
     "type": "sch:Type",
@@ -46,12 +55,14 @@
   {
     "type": "sch:Type",
     "id": "st:CommandInstance",
-    "subClassOf": "st:Element"
+    "subClassOf": "st:Element",
+    "hasMethod": ["st:getMethod", "st:subscribeMethod", "st:observeMethod]"]
   },
   {
     "type": "sch:Type",
     "id": "st:Subscription",
-    "subClassOf": "st:Element"
+    "subClassOf": "st:Element",
+    "hasMethod": ["st:getMethod", "st:subscribeMethod", "st:observeMethod]"]
   },
   {
     "type": "sch:Type",
@@ -81,6 +92,11 @@
   {
     "type": "sch:Type",
     "id": "st:InvokeMethod",
+    "subClassOf": "st:Method"
+  },
+  {
+    "type": "sch:Type",
+    "id": "st:SubscribeMethod",
     "subClassOf": "st:Method"
   },
   {
@@ -123,7 +139,7 @@
   {
     "type": "sch:Property",
     "id": "st:hasParameter",
-    "domain": ["st:Command", "st:attribute", "st:CommandInstance", "st:Subscription"],
+    "domain": ["st:Command", "st:Attribute", "st:CommandInstance", "st:Subscription"],
     "range": ["st:Parameter"]
   },
   {
