@@ -8,8 +8,8 @@
     "type": { "@id":"rdf:type", "@type": "@id"},
     "id": { "@id":"rdf:ID", "@type": "@id"},
     "subClassOf": {"@id": "rdfs:subClassOf", "@type": "@id"},
-	  "range": {"@id": "rdfs:range", "@type": "@id"},
-	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
+    "range": {"@id": "rdfs:range", "@type": "@id"},
+    "domain": {"@id": "rdfs:domain", "@type": "@id"},
     "items": "st:hasItem",
     "hasCapability": { "@id": "st:hasCapability", "@type": "@id"},
     "hasAttribute": { "@id": "st:hasAttribute", "@type": "@id"},
@@ -20,8 +20,7 @@
     "hasRepresentationFormat": { "@id": "st:hasRepresentationFormat", "@type": "@id"}
   },
   "type": "sch:Type",
-  "id": "st:Attribute",
-  "subClassOf": "st:Element",
-  "hasMethod": ["st:getMethod", "st:setMethod]"],
-  "description": "SmartThings Attribute Class"
+  "id": "st:SubscribeMethod",
+  "subClassOf": "st:Method",
+  "description": "SmartThings Observe Method Subclass"
 }

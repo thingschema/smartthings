@@ -14,7 +14,7 @@
   },
   "type": "sch:Property",
   "id": "st:hasParameter",
-  "domain": ["st:Command", "st:attribute", "st:CommandInstance", "st:Subscription"],
+  "domain": ["st:Command", "st:Attribute", "st:CommandInstance", "st:Subscription"],
   "range": ["st:Parameter"],
   "description": "property to indicate a Parameter of a Command or Subscription"
 }
