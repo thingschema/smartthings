@@ -12,7 +12,9 @@
 	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
     "items": "st:hasItem"
   },
-  "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "type": "sch:Property",
+  "id": "st:hasParameter",
+  "domain": ["st:Command", "st:attribute", "st:CommandInstance", "st:Subscription"],
+  "range": ["st:Parameter"],
+  "description": "property to indicate a Parameter of a Command or Subscription"
 }

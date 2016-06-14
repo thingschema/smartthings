@@ -12,7 +12,9 @@
 	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
     "items": "st:hasItem"
   },
-  "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "type": "sch:Property",
+  "id": "st:hasMethod",
+  "domain": ["st:Attribute", "st:Command", "st:CommandInstance", "st:Subscription"],
+  "range": "st:Method",
+  "description": "property to indicate a Method used to interact with an attribute, command, or other resource"
 }

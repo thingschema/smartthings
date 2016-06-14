@@ -12,7 +12,9 @@
 	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
     "items": "st:hasItem"
   },
-  "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "type": "sch:Property",
+  "id": "st:hasRepresentationFormat",
+  "domain": ["st:Command", "st:Attribute", "st:CommandInstance", "st:Subscription", "st:Parameter"],
+  "range": "st:RepresentationFormat",
+  "description": "property to indicate a representation format in JSON-LD"
 }

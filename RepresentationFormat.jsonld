@@ -13,6 +13,6 @@
     "items": "st:hasItem"
   },
   "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "id": "st:RepresentationFormat",
+  "description": "Representation format in JSON-Schema"
 }

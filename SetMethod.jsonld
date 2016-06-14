@@ -13,6 +13,7 @@
     "items": "st:hasItem"
   },
   "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "id": "st:SetMethod",
+  "subClassOf": "st:Method",
+  "description": "SmartThings SET Method Subclass"
 }

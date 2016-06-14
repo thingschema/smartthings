@@ -1,5 +1,4 @@
 
-
 {
   "@context": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -86,7 +85,7 @@
   },
   {
     "type": "sch:Type",
-    "id": "st:observeMethod",
+    "id": "st:ObserveMethod",
     "subClassOf": "st:Method"
   },
   {
@@ -95,7 +94,7 @@
   },
   {
     "type": "sch:Property",
-    "id": "st:hasItem",
+    "id": "st:hasItem"
   },
   {
     "type": "sch:Property",

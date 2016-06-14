@@ -12,7 +12,9 @@
 	  "domain": {"@id": "rdfs:domain", "@type": "@id"},
     "items": "st:hasItem"
   },
-  "type": "sch:Type",
-  "id": "st:Element",
-  "description": "Generic Class for SmartThings"
+  "type": "sch:Property",
+  "id": "st:hasCapability",
+  "domain": "st:Thing",
+  "range": "st:Capability",
+  "description": "property to indicate a Capability"
 }
