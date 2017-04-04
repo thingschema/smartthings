@@ -22,5 +22,5 @@
   "type": "sch:Type",
   "id": "st:SubscribeMethod",
   "subClassOf": "st:Method",
-  "description": "SmartThings Observe Method Subclass"
+  "description": "SmartThings Subscribe Method Subclass"
 }
