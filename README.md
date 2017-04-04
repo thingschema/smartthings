@@ -1,2 +1,2 @@
-# smartthings
-SmartThings Capability model 
+# st-examples
+SmartThings Capability model examples in RDF, schema.org RDFS style
